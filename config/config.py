@@ -1,13 +1,13 @@
+# ++++++++++++++++++++ Email Setup +++++++++++++++++++++++++++++++
 email= 'email'
 e_pwd = 'password'
-
-# project url/domain
-main_page_url = "http://localhost:8000"
-
 
 # Email message content
 content = f"You file has been scanned successfully\nGo to below link to check status of the scanned file\n\n{main_page_url}/status/"
 
+
+# project url/domain
+main_page_url = "http://localhost:8080"
 
 
 # ++++++++++++++++++++++ API Setup ++++++++++++++++++++++++++++++++
