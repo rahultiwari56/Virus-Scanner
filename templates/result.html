@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+        .table {
+            border-radius: 5px;
+            width: 70%;
+            margin: 0px auto;
+            float: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 style="padding: 40px;">
+            Scan File Report
+        </h1>
+    </center>
+
+    <div class="container" style="padding: 40px;">
+        <table class="table table-bordered text-centered">
+            <thead style="background-color: whitesmoke; text-align: center; font-size: large;">
+                <tr>
+                    <th>Topic</th>
+                    <th>Value</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for key in value1.keys() %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>{{ value1[key] }}</td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <center style="padding-top: 2%;">
+        <a href="/">Go to Home-Page</a>
+    </center>
+
+</body>
+
+</html>
